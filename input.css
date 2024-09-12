@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 @import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+=======
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+>>>>>>> 577f2e7 (added new files)

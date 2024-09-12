@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en" style="width: 100vw; height:100vh; background-color: beige">
 <head>
@@ -29,4 +30,45 @@
     </div>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-400 to-purple-500">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center w-80">
+        <h2 class="text-xl font-bold mb-4">Countdown Timer</h2>
+        <input type="number" id="timeInput" class="w-full p-2 border rounded-md text-center" placeholder="Enter seconds"/>
+        <button id="startButton" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Start Countdown</button>
+        <div id="countdownDisplay" class="mt-4 p-4 bg-gray-200 text-xl font-bold rounded-md">00:00</div>
+    </div>
+
+    <script>
+        let countdown;
+        document.getElementById('startButton').addEventListener('click', function() {
+            clearInterval(countdown);
+            let timeLeft = parseInt(document.getElementById('timeInput').value, 10);
+            if (isNaN(timeLeft) || timeLeft <= 0) return;
+
+            function updateDisplay(seconds) {
+                let minutes = Math.floor(seconds / 60);
+                let secs = seconds % 60;
+                document.getElementById('countdownDisplay').textContent = 
+                    `${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+            }
+            
+            updateDisplay(timeLeft);
+            countdown = setInterval(() => {
+                timeLeft--;
+                updateDisplay(timeLeft);
+                if (timeLeft <= 0) clearInterval(countdown);
+            }, 1000);
+        });
+    </script>
+</body>
+>>>>>>> 577f2e7 (added new files)
 </html>

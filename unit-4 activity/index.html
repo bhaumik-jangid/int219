@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind with Bun</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-red-400 via-orange-300 to-yellow-400 h-screen">
+    <header class="bg-gray-900 text-white py-4 text-center">
+        <h1 class="text-2xl font-semibold">My Portfolio</h1>
+        <nav class="mt-2">
+            <ul class="flex justify-center space-x-6">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">About</a></li>
+                <li><a href="#" class="hover:underline">Projects</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="flex justify-center items-center h-3/4">
+        <div class="bg-gradient-to-r from-green-300 via-pink-300 to-purple-300 p-6 rounded-2xl shadow-xl">
+            <h2 class="text-lg font-bold text-black mb-4">Build your own WEB presence:</h2>
+            
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded-xl shadow-lg border-l-4 border-yellow-400 flex justify-center space-x-4">
+                    <div>
+                        <h3 class="text-lg font-bold">1</h3>
+                    </div>
+                    <div>
+                        <p class="text-gray-700">XYZ</p>
+                        <p class="text-gray-600">LPU Jalandhar</p>
+                        <p class="text-gray-500">India</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-4 rounded-xl shadow-lg border-l-4 border-yellow-400 flex justify-center space-x-4">
+                    <div>
+                        <h3 class="text-lg font-bold">2</h3>
+                    </div>
+                    <div>
+                        <p class="text-gray-700">Languages</p>
+                        <p class="text-gray-600">HTML</p>
+                        <p class="text-gray-500">CSS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
