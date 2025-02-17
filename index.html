@@ -4,43 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INT219</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        div{
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin: 10px;
-        }
-
-        img{
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-    </style>
+    <scr src="https://unpkg.com/@tailwindcss/browser@4"></scr ipt>
+    <link rel="stylesheet" href="./output.css">
 </head>
 <body>
-    <div>
-        <img src="C:\Users\bhaum\Pictures\Images\wallpaper(4).jpg" alt="hii">
-        <img src="C:\Users\bhaum\Pictures\Images\wallpaper(4).jpg" alt="hii">
-        <img src="C:\Users\bhaum\Pictures\Images\wallpaper(4).jpg" alt="hii">
-        <img src="C:\Users\bhaum\Pictures\Images\wallpaper(4).jpg" alt="hii">
-        <img src="C:\Users\bhaum\Pictures\Images\wallpaper(4).jpg" alt="hii">
-        <img src="C:\Users\bhaum\Pictures\Images\wallpaper(2).jpg" alt="hii">
-        <img src="C:\Users\bhaum\Pictures\Images\wallpaper(2).jpg" alt="hii">
-        <img src="C:\Users\bhaum\Pictures\Images\wallpaper(2).jpg" alt="hii">
-        <img src="C:\Users\bhaum\Pictures\Images\wallpaper(2).jpg" alt="hii">
-        <img src="C:\Users\bhaum\Pictures\Images\wallpaper(2).jpg" alt="hii">
+    <div class="flex justify-center items-center gap-2 flex-col">
+        justify center
+        item center
     </div>
+    <div class="flex justify-between items-center"> justify-between items-center </div>
+    <div class="m-2 p-2 flex gap-2">tailwindcss spacing</div>
+    <div class="md:m-2 md:p-2">responsive spacing</div>
+
+    <div class="w-1/2 h-32 bg-blue-200">
+        <p>half width and hwight 32</p>
+    </div>
+    <div class="bg-green-200 p-3 inline-block">
+        <div class="font-light">font weight light</div>
+        <div class="font-normal">font weight normal</div>
+        <div class="font-medium">font weight medium</div>
+        <div class="font-semibold">font weight semibold</div>
+        <div class="font-bold">font weight bold</div>
+        <div class="font-extrabold">font weight extrabold</div>
+    </div>
+
 </body>
 </html>
